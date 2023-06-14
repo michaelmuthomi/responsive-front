@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .yellowBlock {
+    @apply absolute top-0 right-0 w-1/2 xl:w-[28%] h-full rounded-tl-[50px] bg-tertiary shadow-lg -z-10;
+  }
+  .button {
+    @apply bg-primary text-white transition-all duration-300 ease-in border-2 border-primary hover:text-primary hover:bg-white focus:outline-none py-2 sm:my-4 text-sm sm:text-lg text-center shadow-lg tracking-wider w-48 sm:w-56 self-center xl:self-start;
+  }
+  .counterBlock {
+    @apply w-full sm:mx-[20%] xl:mx-0 xl:w-1/2 px-4 xl:px-10 py-8 sm:py-10 shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg rounded-3xl xl:rounded-[50px] h-full xl:h-72;
+  }
+  .counterText {
+    @apply font-medium text-countdown uppercase text-[8px] sm:text-xs lg:text-lg tracking-[0.2em] mb-4 xl:mb-8;
+  }
+  .counterNumber {
+    @apply font-medium tracking-wider text-center text-xl sm:text-3xl lg:text-4xl xl:text-5xl;
+  }
+  .statCard {
+    @apply flex flex-col justify-center sm:justify-around xl:justify-center space-y-3 sm:space-y-0 items-center xl:space-y-8 w-[47%] sm:w-[22%] h-40 sm:h-48 xl:h-60 text-center px-2 sm:px-4 mb-4 rounded-3xl sm:rounded-2xl xl:rounded-3xl bg-customWhite;
+  }
+  .plusIcon {
+    @apply h-full opacity-30;
+  }
+  .bulletPoint {
+    @apply mt-2 mr-1 min-w-[12px] max-w-[12px] w-3 h-3;
+  }
+  .FAQcontainer {
+    @apply p-2 xl:p-4 my-2 xl:my-4 text-base xl:text-lg bg-customWhite rounded-xl xl:rounded-2xl shadow-xl;
+  }
+  .FAQarrow {
+    @apply w-5 xl:w-7 h-5 xl:h-7 xl:mr-8 text-primary;
+  }
+  .footerIcon {
+    @apply flex items-center justify-center bg-primary text-white rounded-full w-7 h-7;
+  }
+  .socialMediaIcon {
+    @apply w-4 h-4;
+  }
+  .contactIcon {
+    @apply text-primary mr-2 mt-1 xl:w-6 xl:h-6 min-w-[20px] min-h-[20px];
+  }
+}

@@ -1,15 +1,14 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 function App(): JSX.Element {
   return (
-    <div className="App">
+    <div className="font-libre-baskerville">
       <BrowserRouter>
-        <ToastContainer />
         <Routes>
+          <Route path="/not-found" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
