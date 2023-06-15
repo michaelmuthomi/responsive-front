@@ -10,7 +10,7 @@ const ContentThree = (): JSX.Element => {
         Consultation
       </p>
       <div className="flex flex-wrap space-y-8 xl:space-y-0 justify-around">
-        <div className="w-full sm:px-20 xl:w-5/12 space-y-4 sm:space-y-6 xl:space-y-8 bg-white p-4 xl:p-8 rounded-3xl shadow-lg">
+        <div className="contentThreeContainer sm:space-y-6">
           <p className="text-2xl xl:text-3xl text-center text-secondary">
             Body Mass Index
           </p>
@@ -30,7 +30,7 @@ const ContentThree = (): JSX.Element => {
             </li>
           </ul>
         </div>
-        <div className="w-full sm:px-20 xl:w-5/12 space-y-4 xl:space-y-8 bg-white p-4 xl:p-8 rounded-3xl shadow-lg">
+        <div className="contentThreeContainer">
           <p className="text-2xl xl:text-3xl text-center text-primary">
             Vital Signs Check
           </p>

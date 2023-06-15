@@ -5,6 +5,10 @@ import BurgerMenu from "../features/BurgerMenu";
 const Header = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isMenuOpenLate, setIsMenuOpenLate] = useState<boolean>(false);
+
+  // isMenuOpen is false when Hamburger Menu closes, and it's responsible for animation.
+  // isMenuOpenLate is supposed to wait one second for animation to execute before applying "display: none" to side menu container.
 
   const handleResize = (): void => {
     setWindowWidth(window.innerWidth);
@@ -12,6 +16,11 @@ const Header = (): JSX.Element => {
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
+    isMenuOpen
+      ? setTimeout(function () {
+          setIsMenuOpenLate(!isMenuOpenLate);
+        }, 1000)
+      : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
   useEffect(() => {
@@ -47,9 +56,11 @@ const Header = (): JSX.Element => {
           onClick={toggleMenu}
         />
       )}
-      {isMenuOpen && (
-        <BurgerMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-      )}
+      <BurgerMenu
+        toggleMenu={toggleMenu}
+        isMenuOpen={isMenuOpen}
+        isMenuOpenLate={isMenuOpenLate}
+      />
     </nav>
   );
 };

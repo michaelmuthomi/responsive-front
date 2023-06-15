@@ -12,66 +12,60 @@ const StatCards = (): JSX.Element => {
       <div className="relative flex flex-col px-8 sm:px-16 xl:px-36 h-full bg-primary text-lg">
         <div className="flex flex-wrap justify-between space-x-0 mt-8 mb-6 sm:mb-0 xl:my-16">
           <div className="statCard">
-            <div className="flex flex-col justify-center items-center space-y-3 sm:space-y-1 lg:space-y-8">
+            <div className="statIconAndTitleContainer">
               <div>
-                <RiSuitcaseLine className="text-2xl lg:text-3xl xl:text-4xl text-secondary" />
+                <RiSuitcaseLine className="statIconSize text-secondary" />
               </div>
-              <p className="flex justify-center font-medium text-xl sm:text-2xl lg:text-3xl xl:text-5xl">
+              <p className="statNumber">
                 10
-                <span className="ml-1 lg:ml-2 xl:ml-3 text-[8px] sm:text-[10px] lg:text-sm xl:text-xl">
+                <span className="statPlusIcon">
                   <FaPlus className="plusIcon" />
                 </span>
               </p>
             </div>
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg leading-4">
-              years in business
-            </p>
+            <p className="statDescriptionText">years in business</p>
           </div>
           <div className="statCard">
-            <div className="flex flex-col justify-center items-center space-y-3 sm:space-y-1 lg:space-y-8">
+            <div className="statIconAndTitleContainer">
               <div>
-                <VscSmiley className="text-2xl lg:text-3xl xl:text-4xl text-tertiary" />
+                <VscSmiley className="statIconSize text-tertiary" />
               </div>
-              <p className="flex justify-center font-medium text-xl sm:text-2xl lg:text-3xl xl:text-5xl">
+              <p className="statNumber">
                 2000
-                <span className="ml-1 lg:ml-2 xl:ml-3 text-[8px] sm:text-[10px] lg:text-sm xl:text-xl">
+                <span className="statPlusIcon">
                   <FaPlus className="plusIcon" />
                 </span>
               </p>
             </div>
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg leading-4">
-              positive reviews
-            </p>
+            <p className="statDescriptionText">positive reviews</p>
           </div>
           <div className="statCard">
-            <div className="flex flex-col justify-center items-center space-y-3 sm:space-y-1 lg:space-y-8">
+            <div className="statIconAndTitleContainer">
               <div>
-                <FiMessageCircle className="text-2xl lg:text-3xl xl:text-4xl text-primary" />
+                <FiMessageCircle className="statIconSize text-primary" />
               </div>
-              <p className="flex justify-center font-medium text-xl sm:text-2xl lg:text-3xl xl:text-5xl">
+              <p className="statNumber">
                 15.000
-                <span className="ml-1 lg:ml-2 xl:ml-3 text-[8px] sm:text-[10px] lg:text-sm xl:text-xl">
+                <span className="statPlusIcon">
                   <FaPlus className="plusIcon" />
                 </span>
               </p>
             </div>
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg leading-4">
-              satisfied clients
-            </p>
+            <p className="statDescriptionText">satisfied clients</p>
           </div>
-          <div className="statCard pt-2 sm:pt-4 xl:pt-10 lg:space-y-4">
-            <div className="flex flex-col justify-center items-center space-y-3 sm:space-y-1 lg:space-y-8">
+          <div className="statCard max-[820px]:pt-2 max-[740px]:pt-4 max-[680px]:pt-3 xl:pt-6">
+            <div className="statIconAndTitleContainer">
               <div>
-                <TbActivityHeartbeat className="text-2xl lg:text-3xl xl:text-4xl text-green-600" />
+                <TbActivityHeartbeat className="statIconSize text-green-600" />
               </div>
-              <p className="flex justify-center font-medium text-xl sm:text-2xl lg:text-3xl xl:text-5xl">
+              <p className="statNumber">
                 Many
-                <span className="ml-1 lg:ml-2 xl:ml-3 text-[8px] sm:text-[10px] lg:text-sm xl:text-xl">
+                <span className="statPlusIcon">
                   <FaPlus className="plusIcon" />
                 </span>
               </p>
             </div>
-            <p className="text-xs sm:text-sm lg:text-base xl:text-lg leading-4 lg:pb-4 xl:pb-8">
+            <p className="statDescriptionText">
               nurses and physician assistants on staff
             </p>
           </div>
