@@ -1,6 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Countdown } from "../../types/countdownType";
+import { calculateCountdown } from "../../utils/countdown";
 
 const Counter = (): JSX.Element => {
+  const [countdown, setCountdown] = useState<Countdown>({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
+
+  useEffect(() => {
+    // offer expiration date
+    const endTime: Date = new Date("2023-06-24T23:59:59");
+
+    const calculateTimeLeft = (): void => {
+      const currentTime: Date = new Date();
+      const timeDifference: number = endTime.getTime() - currentTime.getTime();
+
+      if (timeDifference > 0) {
+        const getCountdown: Countdown = calculateCountdown(timeDifference);
+
+        setCountdown(getCountdown);
+      } else {
+        setCountdown({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+      }
+    };
+
+    calculateTimeLeft();
+
+    const timer: NodeJS.Timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className="counterBlock">
       <p className="text-center text-sm sm:text-lg mb-6 xl:mb-14 tracking-wider">
@@ -9,19 +44,19 @@ const Counter = (): JSX.Element => {
       <div className="flex flex-nowrap justify-between min-[500px]:justify-around sm:justify-between">
         <div className="flex flex-col text-center">
           <span className="counterText">Days</span>
-          <span className="counterNumber">00</span>
+          <span className="counterNumber">{countdown.days}</span>
         </div>
         <div className="flex flex-col">
           <span className="counterText">Hours</span>
-          <span className="counterNumber">16</span>
+          <span className="counterNumber">{countdown.hours}</span>
         </div>
         <div className="flex flex-col">
           <span className="counterText">Minutes</span>
-          <span className="counterNumber">29</span>
+          <span className="counterNumber">{countdown.minutes}</span>
         </div>
         <div className="flex flex-col">
           <span className="counterText">Seconds</span>
-          <span className="counterNumber">27</span>
+          <span className="counterNumber">{countdown.seconds}</span>
         </div>
       </div>
     </div>

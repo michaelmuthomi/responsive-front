@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import BurgerMenu from "../features/BurgerMenu";
 
 const Header = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleResize = (): void => {
     setWindowWidth(window.innerWidth);
+  };
+
+  const toggleMenu = (): void => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
@@ -36,7 +42,13 @@ const Header = (): JSX.Element => {
           <a href="/subscription">Subscription</a>
         </div>
       ) : (
-        <RxHamburgerMenu className="w-8 h-8 text-primary" />
+        <RxHamburgerMenu
+          className="w-8 h-8 text-primary cursor-pointer hover:opacity-60"
+          onClick={toggleMenu}
+        />
+      )}
+      {isMenuOpen && (
+        <BurgerMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
       )}
     </nav>
   );

@@ -17,20 +17,22 @@ const Footer = (): JSX.Element => {
             program dedicated to helping you achieve long term weight loss
             success with the use of FDA approved medication.
           </p>
-          <p className="flex">
+          <div className="flex">
             <IoLocationSharp className="contactIcon" />
-            <p className="xl:flex xl:space-x-1">
-              <p className="font-bold">Head Office:</p>
-              <p>1931 W 95th Street Chicago IL, 60643</p>
-            </p>
-          </p>
-          <p className="flex">
+            <div className="xl:flex xl:flex-wrap">
+              <p className="font-bold xl:min-w-fit xl:mr-1">Head Office:</p>
+              <p className="xl:min-w-fit">
+                1931 W 95th Street Chicago IL, 60643
+              </p>
+            </div>
+          </div>
+          <div className="flex">
             <FaPhoneAlt className="contactIcon" />
-            <p className="xl:flex xl:space-x-1">
+            <div className="xl:flex xl:space-x-1">
               <p className="font-bold">Phone:</p>
               <p>773-496-4222</p>
-            </p>
-          </p>
+            </div>
+          </div>
         </div>
         <div className="flex flex-wrap xl:space-x-16">
           <div className="py-4 xl:px-4 mr-8">

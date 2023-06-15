@@ -1,15 +1,42 @@
-import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const BurgerMenu = ({ question }: { question: string }): JSX.Element => {
+const FAQ = ({ question }: { question: string }): JSX.Element => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggleDropdown = (): void => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="FAQcontainer">
+    <div
+      className="FAQcontainer space-y-4 transition-all duration-200 ease-in hover:bg-gray-200 cursor-pointer"
+      onClick={toggleDropdown}
+    >
       <p className="flex justify-between">
-        <p className="w-[85%]">{question}</p>
-        <IoIosArrowDown className="FAQarrow self-center" />
+        <span className="w-[85%]">{question}</span>
+        {isOpen ? (
+          <IoIosArrowUp className="FAQarrow self-center" />
+        ) : (
+          <IoIosArrowDown className="FAQarrow self-center" />
+        )}
       </p>
+      {isOpen && (
+        <p className="w-full text-sm xl:text-base">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+          quam pariatur animi eveniet, quis dolores error magnam repellat omnis
+          velit et totam enim, soluta quod, doloribus non exercitationem.
+          Libero, voluptatem. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Dignissimos quam pariatur animi eveniet, quis
+          dolores error magnam repellat omnis velit et totam enim, soluta quod,
+          doloribus non exercitationem. Libero, voluptatem. Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Dignissimos quam pariatur animi
+          eveniet, quis dolores error magnam repellat omnis velit et totam enim,
+          soluta quod, doloribus non exercitationem. Libero, voluptatem.
+        </p>
+      )}
     </div>
   );
 };
 
-export default BurgerMenu;
+export default FAQ;
