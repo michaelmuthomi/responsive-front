@@ -38,7 +38,7 @@ const Counter = (): JSX.Element => {
 
   return (
     <div className="counterBlock">
-      <p className="text-center text-sm sm:text-lg mb-6 xl:mb-14 tracking-wider">
+      <p className="mb-6 text-center text-sm tracking-wider sm:text-lg xl:mb-14">
         Your offer ends in:
       </p>
       <div className="flex flex-nowrap justify-between min-[500px]:justify-around sm:justify-between">

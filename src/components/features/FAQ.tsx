@@ -10,7 +10,7 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
 
   return (
     <div
-      className="FAQcontainer space-y-4 transition-all duration-300 ease-in hover:bg-gray-200 cursor-pointer"
+      className="FAQcontainer cursor-pointer space-y-4 transition-all duration-300 ease-in hover:bg-gray-200"
       onClick={toggleDropdown}
     >
       <p className="flex justify-between">
