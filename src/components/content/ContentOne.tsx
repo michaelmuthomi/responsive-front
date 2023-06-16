@@ -3,8 +3,8 @@ import MainButton from "../features/MainButton";
 
 const ContentOne = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col xl:flex-row justify-between pb-4 xl:pb-0 px-8 sm:px-36 xl:px-36 h-full bg-secondary text-customWhite text-lg">
-      <div className="flex flex-col space-y-8 sm:space-y-12 xl:space-y-16 xl:w-1/2 my-8 sm:my-12 xl:my-16">
+    <div className="relative flex h-full flex-col justify-between bg-secondary px-8 pb-4 text-lg text-customWhite sm:px-36 xl:flex-row xl:px-36 xl:pb-0">
+      <div className="my-8 flex flex-col space-y-8 sm:my-12 sm:space-y-12 xl:my-16 xl:w-1/2 xl:space-y-16">
         <div className="space-y-4 sm:space-y-6">
           <p className="contentOneTitle">Who Is The Consultation For?</p>
           <p className="contentOneDescription">
@@ -24,7 +24,7 @@ const ContentOne = (): JSX.Element => {
         </div>
         <MainButton overwrite="" />
       </div>
-      <div className="flex justify-center self-center w-3/4 sm:w-full h-80 sm:h-full xl:w-1/2 xl:my-16 xl:ml-16">
+      <div className="flex h-80 w-3/4 justify-center self-center sm:h-full sm:w-full xl:my-16 xl:ml-16 xl:w-1/2">
         <img src="/trainer.png" alt="Trainer" className="h-full" />
       </div>
     </div>

@@ -4,8 +4,8 @@ import MainButton from "../features/MainButton";
 
 const ContentFAQ = (): JSX.Element => {
   return (
-    <div className="relative flex flex-col px-8 sm:px-36 xl:px-36 py-8 xl:py-16 h-full bg-white text-lg">
-      <p className="xl:mt-4 mb-8 xl:mb-12 text-2xl sm:text-4xl tracking-wide">
+    <div className="relative flex h-full flex-col bg-white px-8 py-8 text-lg sm:px-36 xl:px-36 xl:py-16">
+      <p className="mb-8 text-2xl tracking-wide sm:text-4xl xl:mb-12 xl:mt-4">
         Frequently Asked Questions
       </p>
       {/* Dynamically, it should be: <FAQ question="str", answer="str" />  */}

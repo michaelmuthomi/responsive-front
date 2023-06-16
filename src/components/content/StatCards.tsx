@@ -9,8 +9,8 @@ import MainButton from "../features/MainButton";
 const StatCards = (): JSX.Element => {
   return (
     <div>
-      <div className="relative flex flex-col px-8 sm:px-16 xl:px-36 h-full bg-primary text-lg">
-        <div className="flex flex-wrap justify-between space-x-0 mt-8 mb-6 sm:mb-0 xl:my-16">
+      <div className="relative flex h-full flex-col bg-primary px-8 text-lg sm:px-16 xl:px-36">
+        <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:my-16">
           <div className="statCard">
             <div className="statIconAndTitleContainer">
               <div>
