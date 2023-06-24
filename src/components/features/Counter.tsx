@@ -12,7 +12,7 @@ const Counter = (): JSX.Element => {
 
   useEffect(() => {
     // offer expiration date
-    const endTime: Date = new Date("2023-06-24T23:59:59");
+    const endTime: Date = new Date("2023-07-20T23:59:59");
 
     const calculateTimeLeft = (): void => {
       const currentTime: Date = new Date();
