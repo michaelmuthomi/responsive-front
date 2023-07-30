@@ -10,7 +10,7 @@ const StatCards = (): JSX.Element => {
   return (
     <div>
       <div className="relative flex h-full flex-col bg-primary px-8 text-lg sm:px-16 xl:px-36">
-        <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:my-16">
+        <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mt-16 xl:mb-8">
           <div className="statCard">
             <div className="statIconAndTitleContainer">
               <div>
@@ -70,7 +70,7 @@ const StatCards = (): JSX.Element => {
             </p>
           </div>
         </div>
-        <MainButton overwrite="bg-tertiary xl:self-center mb-8 xl:mb-16 xl:mt-0 border-tertiary hover:text-tertiary hover:bg-white" />
+        <MainButton overwrite="bg-tertiary xl:self-center mb-8 xl:mb-8 xl:mt-0 border-tertiary hover:text-tertiary hover:bg-white" />
       </div>
     </div>
   );
