@@ -22,7 +22,7 @@
     @apply text-center text-xl font-medium tracking-wider sm:text-3xl lg:text-4xl xl:text-5xl;
   }
   .statCard {
-    @apply mb-4 flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
+    @apply mb-[-12px] flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
   }
   .statIconAndTitleContainer {
     @apply flex flex-col items-center justify-center space-y-3 sm:space-y-1 lg:space-y-8;
