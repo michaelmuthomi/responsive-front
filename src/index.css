@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
 @layer components {
   .yellowBlock {
     @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[50px] bg-tertiary shadow-lg xl:w-[28%];
@@ -19,7 +22,7 @@
     @apply text-center text-xl font-medium tracking-wider sm:text-3xl lg:text-4xl xl:text-5xl;
   }
   .statCard {
-    @apply mb-4 flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
+    @apply mb-[-12px] flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
   }
   .statIconAndTitleContainer {
     @apply flex flex-col items-center justify-center space-y-3 sm:space-y-1 lg:space-y-8;
@@ -66,4 +69,74 @@
   .contactIcon {
     @apply mr-2 mt-1 min-h-[20px] min-w-[20px] text-primary xl:h-6 xl:w-6;
   }
+}
+:root {  
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --yellow: #F1C93B;
+
+  /* --red: #F31559;
+  --magenta: #FF52A2;
+  --orange: #FFB07F;
+
+  --green: #1A5D1A;
+  --yellow: #F1C93B;
+  --blue: #78C1F3; */
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from, to {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+p {
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+
+}
+
+p > .magic {
+  display: inline-block;
+  position: relative;
+}
+
+p > .magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--yellow),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
