@@ -50,14 +50,30 @@ const BurgerMenu = ({
         </div>
         <hr className="border-1" />
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
-          <a href="/about-us">Abous Us</a>
-          <a href="/bookings">Book Online</a>
-          <a href="/weight-loss">Weight Loss Programs</a>
-          <a href="/stories">Real Patient Stories</a>
-          <a href="/locations">Locations</a>
-          <a href="/blogs">Blog</a>
-          <a href="/shop">Shop</a>
-          <a href="/subscription">Subscription</a>
+          <a className=" hover:font-bold hover:underline" href="/about-us">
+            Abous Us
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/bookings">
+            Book Online
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/weight-loss">
+            Weight Loss Programs
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/stories">
+            Real Patient Stories
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/locations">
+            Locations
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/blogs">
+            Blog
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/shop">
+            Shop
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/subscription">
+            Subscription
+          </a>
         </div>
         <div
           className="fixed left-0 top-0 z-40 h-0 w-0 bg-black bg-opacity-30 sm:h-full sm:w-2/5"
