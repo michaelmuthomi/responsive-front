@@ -41,14 +41,30 @@ const Header = (): JSX.Element => {
       </a>
       {windowWidth >= 1024 ? (
         <div className="flex w-full items-center justify-between">
-          <a href="/about-us">Abous Us</a>
-          <a href="/bookings">Book Online</a>
-          <a href="/weight-loss">Weight Loss Programs</a>
-          <a href="/stories">Real Patient Stories</a>
-          <a href="/locations">Locations</a>
-          <a href="/blogs">Blog</a>
-          <a href="/shop">Shop</a>
-          <a href="/subscription">Subscription</a>
+          <a className=" hover:font-bold hover:underline" href="/about-us">
+            Abous Us
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/bookings">
+            Book Online
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/weight-loss">
+            Weight Loss Programs
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/stories">
+            Real Patient Stories
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/locations">
+            Locations
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/blogs">
+            Blog
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/shop">
+            Shop
+          </a>
+          <a className=" hover:font-bold hover:underline" href="/subscription">
+            Subscription
+          </a>
         </div>
       ) : (
         <RxHamburgerMenu
