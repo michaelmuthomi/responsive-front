@@ -10,7 +10,7 @@
     @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[50px] bg-tertiary shadow-lg xl:w-[28%];
   }
   .button {
-    @apply w-48 self-center border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-300 ease-in hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start;
+    @apply w-48 self-center border-2 border-primary bg-primary py-2 rounded-xl text-center text-sm tracking-wider text-white shadow-lg transition-all duration-300 ease-in hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start;
   }
   .counterBlock {
     @apply h-full w-full rounded-3xl bg-white bg-opacity-30 px-4 py-8 shadow-lg backdrop-blur-lg backdrop-filter sm:mx-[20%] sm:py-10 xl:mx-0 xl:h-72 xl:w-1/2 xl:rounded-[50px] xl:px-10;
@@ -139,4 +139,13 @@ p > .magic > .magic-text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
+}
+.nav-link{
+  transition: transform 300ms ease;
+}
+.nav-link:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+  /* background: #f9f5f6;
+  color: #F1C93B; */
 }
