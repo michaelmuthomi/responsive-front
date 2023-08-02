@@ -24,6 +24,9 @@
   .statCard {
     @apply mb-[-12px] flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
   }
+  .pop-up-animation{
+    @apply sm:space-y-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-110 hover:bg-indigo-500 duration-300 hover:cursor-pointer
+  }
   .statIconAndTitleContainer {
     @apply flex flex-col items-center justify-center space-y-3 sm:space-y-1 lg:space-y-8;
   }

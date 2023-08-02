@@ -10,7 +10,7 @@ const ContentThree = (): JSX.Element => {
         Consultation
       </p>
       <div className="flex flex-wrap justify-around space-y-8 xl:space-y-0">
-        <div className="contentThreeContainer sm:space-y-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-110 hover:bg-indigo-500 duration-300 hover:cursor-pointer">
+        <div className="contentThreeContainer pop-up-animation">
           <p className="text-center text-2xl text-secondary xl:text-3xl">
             Body Mass Index
           </p>
@@ -30,7 +30,7 @@ const ContentThree = (): JSX.Element => {
             </li>
           </ul>
         </div>
-        <div className="contentThreeContainer sm:space-y-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-110 hover:bg-indigo-500 duration-300 hover:cursor-pointer">
+        <div className="contentThreeContainer pop-up-animation">
           <p className="text-center text-2xl text-primary xl:text-3xl">
             Vital Signs Check
           </p>
