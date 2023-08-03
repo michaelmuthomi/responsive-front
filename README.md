@@ -1,6 +1,4 @@
-# Welcome to "Better Weigh Inc" - An Interactive Weight Management App
-
-![Better Weigh Inc]
+# Welcome to "Better Weigh Inc"
 
 ## Table of Contents
 
