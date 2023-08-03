@@ -48,10 +48,10 @@ To run the "Better Weigh Inc" app on your local machine, follow these steps:
 
 3. Install the required dependencies using npm (Node Package Manager):
 
-  `npm install`
+  `npm install` or `npm ci`
 
 4. Run the app locally:
-  `npm start`
+  `npm run start`
 
 The app should now be running at `http://localhost:3000/` in your browser.
 
