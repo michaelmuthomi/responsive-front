@@ -22,19 +22,8 @@ const Counter = (): JSX.Element => {
         const getCountdown: Countdown = calculateCountdown(timeDifference);
 
         setCountdown(getCountdown);
-      }
-
-      if (timeDifference < 86400000) {
-        let month = endTime.getMonth()
-        let year = endTime.getFullYear()
-        if (month === 12) {
-          month = 1
-          year++
-          endTime.setFullYear(year)
-        } else {
-          month++
-        }
-        endTime.setMonth(month)
+      } else {
+        setCountdown({ days: "00", hours: "00", minutes: "00", seconds: "00" });
       }
     };
 
