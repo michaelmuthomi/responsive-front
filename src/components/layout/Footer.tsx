@@ -39,39 +39,81 @@ const Footer = (): JSX.Element => {
             <h5 className="mb-4 text-3xl xl:mb-8">About</h5>
             <ul className="space-y-4">
               <li>
-                <a href="/about-us">About Us</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/about-us"
+                >
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="/bookings">Book Online</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/bookings"
+                >
+                  Book Online
+                </a>
               </li>
               <li>
-                <a href="/locations">Locations</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/locations"
+                >
+                  Locations
+                </a>
               </li>
               <li>
-                <a href="/stories">Real Patient Stories</a>
+                <a className=" hover:font-bold hover:underline" href="/stories">
+                  Real Patient Stories
+                </a>
               </li>
               <li>
                 <a href="/weight-loss">Weight Loss Programs</a>
               </li>
             </ul>
           </div>
-          <div className="py-4 xl:px-4">
+          <div className="  py-4 xl:px-4">
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
               <li>
-                <a href="/franchise-opportunities">Franchise Opportunities</a>
+                <a
+                  className=" box-border hover:font-bold hover:underline"
+                  href="/franchise-opportunities"
+                >
+                  Franchise Opportunities
+                </a>
               </li>
               <li>
-                <a href="/career-opportunities">Career Opportunities</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/career-opportunities"
+                >
+                  Career Opportunities
+                </a>
               </li>
               <li>
-                <a href="/privacy-policy">Privacy Policy</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/privacy-policy"
+                >
+                  Privacy Policy
+                </a>
               </li>
               <li>
-                <a href="/terms-conditions">Terms & Conditions</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/terms-conditions"
+                >
+                  Terms & Conditions
+                </a>
               </li>
               <li>
-                <a href="/return-policy">Return Policy</a>
+                <a
+                  className=" hover:font-bold hover:underline"
+                  href="/return-policy"
+                >
+                  Return Policy
+                </a>
               </li>
             </ul>
           </div>
