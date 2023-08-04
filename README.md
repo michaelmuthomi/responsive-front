@@ -1,5 +1,7 @@
 # Welcome to "Better Weigh Inc"
 
+This repo is only used for Open Source Contributing, where people practice their coding skills.
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
