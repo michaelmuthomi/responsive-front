@@ -7,7 +7,7 @@
     @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[50px] bg-tertiary shadow-lg xl:w-[28%];
   }
   .button {
-    @apply w-48 self-center border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-300 ease-in hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start;
+    @apply w-48 self-center border-2 border-primary bg-primary py-2 rounded-xl text-center text-sm tracking-wider text-white shadow-lg transition-all duration-300 ease-in hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start;
   }
   .counterBlock {
     @apply h-full w-full rounded-3xl bg-white bg-opacity-30 px-4 py-8 shadow-lg backdrop-blur-lg backdrop-filter sm:mx-[20%] sm:py-10 xl:mx-0 xl:h-72 xl:w-1/2 xl:rounded-[50px] xl:px-10;
@@ -20,6 +20,9 @@
   }
   .statCard {
     @apply mb-4 flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
+  }
+  .popUpAnimation{
+    @apply sm:space-y-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:text-white hover:scale-110 hover:bg-indigo-500 duration-300 hover:cursor-pointer
   }
   .statIconAndTitleContainer {
     @apply flex flex-col items-center justify-center space-y-3 sm:space-y-1 lg:space-y-8;
@@ -66,4 +69,83 @@
   .contactIcon {
     @apply mr-2 mt-1 min-h-[20px] min-w-[20px] text-primary xl:h-6 xl:w-6;
   }
+}
+:root {  
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --yellow: #F1C93B;
+
+  /* --red: #F31559;
+  --magenta: #FF52A2;
+  --orange: #FFB07F;
+
+  --green: #1A5D1A;
+  --yellow: #F1C93B;
+  --blue: #78C1F3; */
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from, to {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+p {
+  font-size: clamp(2em, 2vw, 4em);
+  font-weight: 400;
+
+}
+
+p > .magic {
+  display: inline-block;
+  position: relative;
+}
+
+p > .magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--yellow),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+.nav-link{
+  transition: transform 300ms ease;
+}
+.nav-link:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+  /* background: #f9f5f6;
+  color: #F1C93B; */
 }

@@ -41,30 +41,14 @@ const Header = (): JSX.Element => {
       </a>
       {windowWidth >= 1024 ? (
         <div className="flex w-full items-center justify-between">
-          <a className=" hover:font-bold hover:underline" href="/about-us">
-            Abous Us
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/bookings">
-            Book Online
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/weight-loss">
-            Weight Loss Programs
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/stories">
-            Real Patient Stories
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/locations">
-            Locations
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/blogs">
-            Blog
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/shop">
-            Shop
-          </a>
-          <a className=" hover:font-bold hover:underline" href="/subscription">
-            Subscription
-          </a>
+          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/about-us">Abous Us</a>
+          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/bookings">Book Online</a>
+          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/weight-loss">Weight Loss Programs</a>
+          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/stories">Real Patient Stories</a>
+          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/locations">Locations</a>
+          <a className="nav-link bg-primary opacity-90 text-white px-2 py-1 rounded" href="/blogs">Blog</a>
+          <a className="nav-link bg-primary opacity-90 text-white px-2 py-1 rounded" href="/shop">Shop</a>
+          <a className="nav-link bg-primary opacity-90 text-white px-2 py-1 rounded" href="/subscription">Subscription</a>
         </div>
       ) : (
         <RxHamburgerMenu
