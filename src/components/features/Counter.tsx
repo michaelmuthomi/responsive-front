@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { Countdown } from "../../types/countdownType";
-import { calculateCountdown } from "../../utils/countdown";
+import React, { useEffect, useState } from 'react';
+import { Countdown } from '../../types/countdownType';
+import { calculateCountdown } from '../../utils/countdown';
 
 const Counter = (): JSX.Element => {
   const [countdown, setCountdown] = useState<Countdown>({
-    days: "00",
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
+    days: '00',
+    hours: '00',
+    minutes: '00',
+    seconds: '00',
   });
 
   useEffect(() => {
     // offer expiration date
-    const endTime: Date = new Date("2023-09-05T23:59:59");
+    const endTime: Date = new Date('2023-09-05T23:59:59');
 
     const calculateTimeLeft = (): void => {
       const currentTime: Date = new Date();
@@ -23,7 +23,7 @@ const Counter = (): JSX.Element => {
 
         setCountdown(getCountdown);
       } else {
-        setCountdown({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+        setCountdown({ days: '00', hours: '00', minutes: '00', seconds: '00' });
       }
     };
 

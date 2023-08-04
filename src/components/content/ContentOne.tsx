@@ -1,5 +1,5 @@
-import React from "react";
-import MainButton from "../features/MainButton";
+import React from 'react';
+import MainButton from '../features/MainButton';
 
 const ContentOne = (): JSX.Element => {
   return (

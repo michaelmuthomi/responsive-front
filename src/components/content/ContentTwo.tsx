@@ -1,5 +1,5 @@
-import React from "react";
-import MainButton from "../features/MainButton";
+import React from 'react';
+import MainButton from '../features/MainButton';
 
 const ContentTwo = (): JSX.Element => {
   return (
@@ -13,7 +13,7 @@ const ContentTwo = (): JSX.Element => {
           We have seen so many tricks, gimmicks and weight loss programs that
           simply do not work for us. They want us to eat like a pigeon, avoid
           all the things we love to eat and work out till we cry.
-        </span>{" "}
+        </span>{' '}
         <span className="order-2 text-sm sm:text-base xl:order-none xl:text-lg">
           We are here to tell you that it doesn't have to be that way. There is
           hope! Technology has advanced rapidly in recent years and now, with

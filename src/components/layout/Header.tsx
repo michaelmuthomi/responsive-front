@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import BurgerMenu from "../features/BurgerMenu";
+import React, { useEffect, useState } from 'react';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import BurgerMenu from '../features/BurgerMenu';
 
 const Header = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -24,9 +24,9 @@ const Header = (): JSX.Element => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -41,14 +41,54 @@ const Header = (): JSX.Element => {
       </a>
       {windowWidth >= 1024 ? (
         <div className="flex w-full items-center justify-between">
-          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/about-us">Abous Us</a>
-          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/bookings">Book Online</a>
-          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/weight-loss">Weight Loss Programs</a>
-          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/stories">Real Patient Stories</a>
-          <a className="nav-link bg-yellow-400 opacity-75 px-2 py-1 rounded" href="/locations">Locations</a>
-          <a className="nav-link bg-primary opacity-90 text-white px-2 py-1 rounded" href="/blogs">Blog</a>
-          <a className="nav-link bg-primary opacity-90 text-white px-2 py-1 rounded" href="/shop">Shop</a>
-          <a className="nav-link bg-primary opacity-90 text-white px-2 py-1 rounded" href="/subscription">Subscription</a>
+          <a
+            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            href="/about-us"
+          >
+            Abous Us
+          </a>
+          <a
+            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            href="/bookings"
+          >
+            Book Online
+          </a>
+          <a
+            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            href="/weight-loss"
+          >
+            Weight Loss Programs
+          </a>
+          <a
+            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            href="/stories"
+          >
+            Real Patient Stories
+          </a>
+          <a
+            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            href="/locations"
+          >
+            Locations
+          </a>
+          <a
+            className="nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
+            href="/blogs"
+          >
+            Blog
+          </a>
+          <a
+            className="nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
+            href="/shop"
+          >
+            Shop
+          </a>
+          <a
+            className="nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
+            href="/subscription"
+          >
+            Subscription
+          </a>
         </div>
       ) : (
         <RxHamburgerMenu

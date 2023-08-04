@@ -1,8 +1,8 @@
-import React from "react";
-import { FaPhoneAlt, FaFacebookF } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
-import { IoLocationSharp } from "react-icons/io5";
-import { AiFillInstagram } from "react-icons/ai";
+import React from 'react';
+import { FaPhoneAlt, FaFacebookF } from 'react-icons/fa';
+import { BsTwitter } from 'react-icons/bs';
+import { IoLocationSharp } from 'react-icons/io5';
+import { AiFillInstagram } from 'react-icons/ai';
 
 const Footer = (): JSX.Element => {
   return (
