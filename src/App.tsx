@@ -12,9 +12,9 @@ function App(): JSX.Element {
         <Routes>
           <Route path="/not-found" element={<NotFound />} />
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/not-found" />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/about-us" element={<Aboutus />} />
+          <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
       </BrowserRouter>
     </div>
