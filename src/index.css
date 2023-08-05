@@ -75,6 +75,7 @@
   --violet: rgb(103, 58, 183);
   --pink: rgb(244, 143, 177);
   --yellow: #f1c93b;
+  --hover-pink: #dc74c3;
 
   /* --red: #F31559;
   --magenta: #FF52A2;
@@ -148,4 +149,17 @@ p > .magic > .magic-text {
   cursor: pointer;
   /* background: #f9f5f6;
   color: #F1C93B; */
+}
+
+a:hover {
+  color: var(--hover-pink);
+  /* opacity: 0.3; */
+}
+
+a.header-hover:hover {
+  color: var(--hover-pink);
+}
+
+a.header-hover-x:hover {
+  color: rgb(80, 5, 68);
 }

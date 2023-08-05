@@ -40,7 +40,7 @@ const Footer = (): JSX.Element => {
             <ul className="space-y-4">
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/about-us"
                 >
                   About Us
@@ -48,7 +48,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/bookings"
                 >
                   Book Online
@@ -56,14 +56,15 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/locations"
                 >
                   Locations
                 </a>
               </li>
               <li>
-                <a className=" hover:font-bold hover:underline" href="/stories">
+                <a className=""
+                   href="">
                   Real Patient Stories
                 </a>
               </li>
@@ -77,7 +78,7 @@ const Footer = (): JSX.Element => {
             <ul className="space-y-4">
               <li>
                 <a
-                  className=" box-border hover:font-bold hover:underline"
+                  className=" box-border"
                   href="/franchise-opportunities"
                 >
                   Franchise Opportunities
@@ -85,7 +86,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/career-opportunities"
                 >
                   Career Opportunities
@@ -93,7 +94,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/privacy-policy"
                 >
                   Privacy Policy
@@ -101,7 +102,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/terms-conditions"
                 >
                   Terms & Conditions
@@ -109,7 +110,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=" hover:font-bold hover:underline"
+                  className=""
                   href="/return-policy"
                 >
                   Return Policy

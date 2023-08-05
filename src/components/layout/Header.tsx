@@ -42,49 +42,49 @@ const Header = (): JSX.Element => {
       {windowWidth >= 1024 ? (
         <div className="flex w-full items-center justify-between">
           <a
-            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            className="header-hover nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
             href="/about-us"
           >
             Abous Us
           </a>
           <a
-            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            className="header-hover nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
             href="/bookings"
           >
             Book Online
           </a>
           <a
-            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            className="header-hover nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
             href="/weight-loss"
           >
             Weight Loss Programs
           </a>
           <a
-            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            className="header-hover nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
             href="/stories"
           >
             Real Patient Stories
           </a>
           <a
-            className="nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
+            className="header-hover nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
             href="/locations"
           >
             Locations
           </a>
           <a
-            className="nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
+            className="header-hover-x nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
             href="/blogs"
           >
             Blog
           </a>
           <a
-            className="nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
+            className="header-hover-x nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
             href="/shop"
           >
             Shop
           </a>
           <a
-            className="nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
+            className="header-hover-x nav-link rounded bg-primary px-2 py-1 text-white opacity-90"
             href="/subscription"
           >
             Subscription
