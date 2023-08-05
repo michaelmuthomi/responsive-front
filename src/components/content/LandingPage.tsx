@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../layout/Header";
-import Counter from "../features/Counter";
-import MainButton from "../features/MainButton";
+import React from 'react';
+import Header from '../layout/Header';
+import Counter from '../features/Counter';
+import MainButton from '../features/MainButton';
 
 const LandingPage = (): JSX.Element => {
   return (
@@ -21,7 +21,7 @@ const LandingPage = (): JSX.Element => {
           Limited spots available due to the Physicians schedule and the high
           demand for service. No credit card or insurance required.
         </p>
-        <MainButton overwrite={""} />
+        <MainButton overwrite={''} />
       </div>
     </div>
   );

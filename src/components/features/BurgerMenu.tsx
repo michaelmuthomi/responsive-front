@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { IoClose } from "react-icons/io5";
+import React, { useEffect, useState } from 'react';
+import { IoClose } from 'react-icons/io5';
 
 const BurgerMenu = ({
   toggleMenu,
@@ -18,9 +18,9 @@ const BurgerMenu = ({
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -33,11 +33,11 @@ const BurgerMenu = ({
         // check if menu is open on different resolutions
         isMenuOpen
           ? windowWidth < 640
-            ? "animate-slideInRight"
-            : "animate-slideInRightSM"
+            ? 'animate-slideInRight'
+            : 'animate-slideInRightSM'
           : windowWidth < 640
-          ? "scale-0 animate-slideOutRight"
-          : "scale-0 animate-slideOutRightSM"
+          ? 'scale-0 animate-slideOutRight'
+          : 'scale-0 animate-slideOutRightSM'
       }`}
     >
       <div className="fixed right-0 top-0 z-50 h-full w-full bg-white py-2 pl-8 pr-4 shadow-lg sm:w-3/5 sm:py-3 sm:pl-16 sm:pr-16">

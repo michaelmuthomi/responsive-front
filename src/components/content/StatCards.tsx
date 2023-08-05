@@ -1,16 +1,16 @@
-import React from "react";
-import { FaPlus } from "react-icons/fa";
-import { FiMessageCircle } from "react-icons/fi";
-import { RiSuitcaseLine } from "react-icons/ri";
-import { VscSmiley } from "react-icons/vsc";
-import { TbActivityHeartbeat } from "react-icons/tb";
-import MainButton from "../features/MainButton";
+import React from 'react';
+import { FaPlus } from 'react-icons/fa';
+import { FiMessageCircle } from 'react-icons/fi';
+import { RiSuitcaseLine } from 'react-icons/ri';
+import { VscSmiley } from 'react-icons/vsc';
+import { TbActivityHeartbeat } from 'react-icons/tb';
+import MainButton from '../features/MainButton';
 
 const StatCards = (): JSX.Element => {
   return (
     <div>
       <div className="relative flex h-full flex-col bg-primary px-8 text-lg sm:px-16 xl:px-36">
-        <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mt-16 xl:mb-8">
+        <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mb-8 xl:mt-16">
           <div className="statCard popUpAnimation">
             <div className="statIconAndTitleContainer ">
               <div>
@@ -53,7 +53,7 @@ const StatCards = (): JSX.Element => {
             </div>
             <p className="statDescriptionText">satisfied clients</p>
           </div>
-          <div className="statCard max-[820px]:pt-2 max-[740px]:pt-4 max-[680px]:pt-3 xl:pt-6 popUpAnimation">
+          <div className="statCard popUpAnimation max-[820px]:pt-2 max-[740px]:pt-4 max-[680px]:pt-3 xl:pt-6">
             <div className="statIconAndTitleContainer">
               <div>
                 <TbActivityHeartbeat className="statIconSize text-green-600" />
