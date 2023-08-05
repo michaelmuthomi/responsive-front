@@ -40,7 +40,7 @@ const Footer = (): JSX.Element => {
             <ul className="space-y-4">
               <li>
                 <a
-                  className=""
+                  
                   href="/about-us"
                 >
                   About Us
@@ -48,7 +48,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=""
+                  
                   href="/bookings"
                 >
                   Book Online
@@ -56,15 +56,15 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=""
+                  
                   href="/locations"
                 >
                   Locations
                 </a>
               </li>
               <li>
-                <a className=""
-                   href="">
+                <a 
+                   href="/stories">
                   Real Patient Stories
                 </a>
               </li>
@@ -86,7 +86,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=""
+                  
                   href="/career-opportunities"
                 >
                   Career Opportunities
@@ -94,7 +94,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=""
+                  
                   href="/privacy-policy"
                 >
                   Privacy Policy
@@ -102,7 +102,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=""
+                  
                   href="/terms-conditions"
                 >
                   Terms & Conditions
@@ -110,7 +110,7 @@ const Footer = (): JSX.Element => {
               </li>
               <li>
                 <a
-                  className=""
+                  
                   href="/return-policy"
                 >
                   Return Policy
