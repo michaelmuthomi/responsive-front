@@ -9,15 +9,15 @@ const ContentTwo = (): JSX.Element => {
       </p>
       <p className="flex flex-col space-y-4 px-8 sm:space-y-8 sm:px-36 xl:block xl:space-y-0 xl:px-0">
         <span className="order-1 text-sm sm:text-base xl:order-none xl:text-lg">
-          For those of us who struggle with our weight it's easy to lose hope.
-          We have seen so many tricks, gimmicks and weight loss programs that
-          simply do not work for us. They want us to eat like a pigeon, avoid
-          all the things we love to eat and work out till we cry.
+          For those of us who struggle with our weight it&apos;s easy to lose
+          hope. We have seen so many tricks, gimmicks and weight loss programs
+          that simply do not work for us. They want us to eat like a pigeon,
+          avoid all the things we love to eat and work out till we cry.
         </span>{' '}
         <span className="order-2 text-sm sm:text-base xl:order-none xl:text-lg">
-          We are here to tell you that it doesn't have to be that way. There is
-          hope! Technology has advanced rapidly in recent years and now, with
-          proper guidance...
+          We are here to tell you that it doesn&apos;t have to be that way.
+          There is hope! Technology has advanced rapidly in recent years and
+          now, with proper guidance...
         </span>
       </p>
       <p className="order-4 px-8 text-sm sm:px-36 sm:text-base xl:order-none xl:px-0 xl:text-lg">

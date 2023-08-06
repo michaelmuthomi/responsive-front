@@ -6,7 +6,7 @@ const ContentThree = (): JSX.Element => {
   return (
     <div className="relative flex h-full flex-col items-center space-y-8 bg-customWhite px-8 py-8 text-lg  sm:px-36 xl:space-y-16 xl:px-36 xl:py-16">
       <p className="my-2 text-start text-3xl tracking-wide sm:my-4 xl:text-center xl:text-4xl">
-        What You'll Get At Your <span className="text-primary">Free</span>{' '}
+        What You&apos;ll Get At Your <span className="text-primary">Free</span>{' '}
         Consultation
       </p>
       <div className="flex flex-wrap justify-around space-y-8 xl:space-y-0">
@@ -42,7 +42,7 @@ const ContentThree = (): JSX.Element => {
             </li>
             <li className="flex text-base xl:text-lg">
               <BsDot className="bulletPoint" />
-              Pulse rate, heart's rate, rhythm and regularity
+              Pulse rate, heart&apos;s rate, rhythm and regularity
             </li>
             <li className="flex text-base xl:text-lg">
               <BsDot className="bulletPoint" />

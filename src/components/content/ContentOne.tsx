@@ -8,10 +8,10 @@ const ContentOne = (): JSX.Element => {
         <div className="space-y-4 sm:space-y-6">
           <p className="contentOneTitle">Who Is The Consultation For?</p>
           <p className="contentOneDescription">
-            Chicago's free medical check-up and weight loss consultation is for
-            Chicago residents who are looking to lose weight so they can live a
-            long, vibrant and healthy life, while looking good and not breaking
-            the bank.
+            Chicago&apos;s free medical check-up and weight loss consultation is
+            for Chicago residents who are looking to lose weight so they can
+            live a long, vibrant and healthy life, while looking good and not
+            breaking the bank.
           </p>
         </div>
         <div className="space-y-4 sm:space-y-6">
