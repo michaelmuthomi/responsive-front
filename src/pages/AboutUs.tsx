@@ -7,7 +7,6 @@ const AboutUs = (): JSX.Element => {
   return (
     <>
       <div className="yellowBlock"></div>
-
       <Header />
       <div className="mt-10 h-auto p-5 ">
         <div className="m-auto flex flex-col gap-2 md:w-4/6 md:flex-row">
@@ -76,20 +75,14 @@ const AboutUs = (): JSX.Element => {
             <ProfilePics
               positionAndName={'CEO John Doe'}
               imgSrc={'./aboutus_image1.webp'}
-              href={''}
-              nickName={''}
             />
             <ProfilePics
               positionAndName={'COO Johana Doe'}
               imgSrc={'./aboutus_image1.webp'}
-              href={''}
-              nickName={''}
             />
             <ProfilePics
               positionAndName={'Medical Head Dr. Doeliuos'}
               imgSrc={'./aboutus_image1.webp'}
-              href={''}
-              nickName={''}
             />
           </div>
 
