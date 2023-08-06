@@ -1,8 +1,9 @@
 import React from "react"
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
+import ProfilePics from "../components/AboutUs/ProfilePics"
 
-const Aboutus = ():JSX.Element => {
+const AboutUs = ():JSX.Element => {
 
 return(
     <>
@@ -11,9 +12,9 @@ return(
         <Header />
         <div className="h-auto p-5 mt-10 ">
             <div className="md:w-4/6 m-auto flex md:flex-row flex-col gap-2">
-                <div className="md:w-3/5 md:p-5 flex justify-center">
+                <figure className="md:w-3/5 md:p-5 flex justify-center">
                     <img className="rounded-md shadow-md shadow-yellow-300" src="./aboutus_image1.webp" alt="about us"></img>
-                </div>
+                </figure>
                 <div className="md:w-2/5 md:p-5 ">
                     <div className="w-full flex justify-center">
                         <h2 className="text-4xl font-bold text-yellow-300 bg-blue-400 md:w-[200px] w-4/5 text-center rounded-2xl p-3">About us</h2>
@@ -34,9 +35,9 @@ return(
                                 <p className="mt-5 text-xl text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam aspernatur expedita facilis consectetur beatae.</p>
                             </div>
 
-                            <div className="md:w-2/5 md:p-5 flex justify-center">
+                            <figure className="md:w-2/5 md:p-5 flex justify-center">
                                 <img className="rounded-md shadow-md shadow-yellow-300" src="./aboutus_image1.webp" alt="about us"></img>
-                            </div>
+                            </figure>
                         </div>
                     </div>
 
@@ -46,29 +47,43 @@ return(
                     </div>
 
                     <div className="flex md:flex-row flex-col w-full md:justify-between items-center mt-10 gap-[20px]">
-                        <div className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">CEO John Doe</p>
-                        </div>
-                        <div className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">COO Johana Doe</p>
-                        </div>
-                        <div className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">Medical Head Dr. Doe Lius</p>
-                        </div>
+                        
+                        <ProfilePics 
+                            positionAndName={"CEO John Doe"}
+                            imgSrc={"./aboutus_image1.webp"} 
+                            href={""}
+                            nickName={""}
+                        />
+                        <ProfilePics 
+                            positionAndName={"COO Johana Doe"}
+                            imgSrc={"./aboutus_image1.webp"} 
+                            href={""}
+                            nickName={""}
+                        />
+                        <ProfilePics 
+                            positionAndName={"Medical Head Dr. Doeliuos"}
+                            imgSrc={"./aboutus_image1.webp"} 
+                            href={""}
+                            nickName={""}
+                        />
+
+                      
                     </div>
 
                     <div className="flex md:flex-row flex-col w-full justify-center mt-10 md:gap-[200px] gap-[20px] items-center">
-                        <div className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">Product owner <a href="https://github.com/anicmarko9">@anicmarko9</a></p>
-                        </div>
-                        <div className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">Developer <a href="https://www.bellodev.com">@BelloDev</a></p>
-                        </div>
+                        <ProfilePics
+                            positionAndName={"Product Owner"}
+                            imgSrc={"./aboutus_image1.webp"}
+                            href={"https://github.com/anicmarko9"}
+                            nickName={"@anicmarko9"}
+                        />
+
+                        <ProfilePics
+                            positionAndName={"Developer"}
+                            imgSrc={"./aboutus_image1.webp"}
+                            href={"https://www.bellodev.com"}
+                            nickName={"@BelloDev"}
+                        />
                     </div>
 
                 </div>
@@ -82,4 +97,4 @@ return(
 
 }
 
-export default Aboutus
+export default AboutUs
