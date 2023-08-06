@@ -1,6 +1,7 @@
 import React from "react"
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
+import ProfilePics from "../components/AboutUs/ProfilePics"
 
 const AboutUs = ():JSX.Element => {
 
@@ -46,29 +47,43 @@ return(
                     </div>
 
                     <div className="flex md:flex-row flex-col w-full md:justify-between items-center mt-10 gap-[20px]">
-                        <figure className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">CEO John Doe</p>
-                        </figure>
-                        <figure className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">COO Johana Doe</p>
-                        </figure>
-                        <figure className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">Medical Head Dr. Doe Lius</p>
-                        </figure>
+                        
+                        <ProfilePics 
+                            positionAndName={"CEO John Doe"}
+                            imgSrc={"./aboutus_image1.webp"} 
+                            href={""}
+                            nickName={""}
+                        />
+                        <ProfilePics 
+                            positionAndName={"COO Johana Doe"}
+                            imgSrc={"./aboutus_image1.webp"} 
+                            href={""}
+                            nickName={""}
+                        />
+                        <ProfilePics 
+                            positionAndName={"Medical Head Dr. Doeliuos"}
+                            imgSrc={"./aboutus_image1.webp"} 
+                            href={""}
+                            nickName={""}
+                        />
+
+                      
                     </div>
 
                     <div className="flex md:flex-row flex-col w-full justify-center mt-10 md:gap-[200px] gap-[20px] items-center">
-                        <figure className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">Product owner <a href="https://github.com/anicmarko9">@anicmarko9</a></p>
-                        </figure>
-                        <figure className="w-[300px] h-[300px] flex flex-col justify-center items-center">
-                            <img className="rounded-full w-[250px] h-[250px]" src="./aboutus_image1.webp" alt="CEO" />
-                            <p className="text-xl p-3 italic">Developer <a href="https://www.bellodev.com">@BelloDev</a></p>
-                        </figure>
+                        <ProfilePics
+                            positionAndName={"Product Owner"}
+                            imgSrc={"./aboutus_image1.webp"}
+                            href={"https://github.com/anicmarko9"}
+                            nickName={"@anicmarko9"}
+                        />
+
+                        <ProfilePics
+                            positionAndName={"Developer"}
+                            imgSrc={"./aboutus_image1.webp"}
+                            href={"https://www.bellodev.com"}
+                            nickName={"@BelloDev"}
+                        />
                     </div>
 
                 </div>
