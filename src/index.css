@@ -36,11 +36,11 @@
     > .statNumber
     > .statPlusIcon
     > svg {
-    @apply delay-150 ease-in-out fill-white opacity-100;
+    @apply delay-custom ease-in-out fill-white opacity-100;
   }
 
   .statCard:hover > .statIconAndTitleContainer > div > svg {
-    @apply delay-150 ease-in-out opacity-100 text-white;
+    @apply delay-custom ease-in-out opacity-100 text-white;
   }
 
   .statIconAndTitleContainer {
