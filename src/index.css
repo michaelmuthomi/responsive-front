@@ -24,6 +24,9 @@
   .popUpAnimation {
     @apply transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer hover:bg-indigo-500 hover:text-white sm:space-y-6;
   }
+  .statCard:hover{
+    background-color: #dc74c3;
+  }
   .statIconAndTitleContainer {
     @apply flex flex-col items-center justify-center space-y-3 sm:space-y-1 lg:space-y-8;
   }
